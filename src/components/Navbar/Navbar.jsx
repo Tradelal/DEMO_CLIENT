@@ -36,7 +36,7 @@ const Navbar = () => {
     <>
       <nav>
         <h1 onClick={() => { navigate("/admin", { replace: true }) }}>Dashboard</h1>
-        {!accessBtn ? <div className="nav-links">
+        {accessBtn ? <div className="nav-links">
           <a href="/admin/addProduct" className="link">
             Add Product
           </a>
