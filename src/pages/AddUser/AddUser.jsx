@@ -187,10 +187,10 @@ const AddUser = () => {
                         </div>
                         <div className="alreadyuser" style={{ marginBottom: "1rem" }}>
                             <input type="checkbox" onChange={handleCheckChange} />
-                            <a href="/terms&condition">Terms and Condition</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none", color: "black"}} href="/terms&condition">Terms and Condition</a>
                         </div>
                         <div className="alreadyuser">
-                            <a href="/loguser" className="userLink" style={{ marginBottom: "1rem" }}>Already a User</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none", color: "black", marginBottom: "1rem"}} href="/loguser" className="userLink">Already a User</a>
                         </div>
 
                         <button type="submit" className="login-btn new">Register</button>
