@@ -23,7 +23,7 @@ const Footer = () => {
                         <UilTelegram className="footer_icon" />
                         <div className="inner_div">
                             <p className="bold">Telegram</p>
-                            <a href='https://t.me/tradelal' target="_blank" className="number">https://t.me/tradelal</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none"}} href='https://t.me/tradelal' target="_blank" className="number">https://t.me/tradelal</a>
                         </div>
                     </div>
                     <div className="row_1">
@@ -45,13 +45,13 @@ const Footer = () => {
                         <h2 className='follow_us_header'>Follow Us</h2>
                         <div className="social_container">
                             <div className="facebook">
-                                <a href="#" className='social_a'><UilFacebookF className="social_media_icon" /></a>
+                                <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="#" className='social_a'><UilFacebookF className="social_media_icon" /></a>
                             </div>
                             <div className="twitter">
-                                <a href="#" className='social_a'><UilTwitter className="social_media_icon" /></a>
+                                <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="#" className='social_a'><UilTwitter className="social_media_icon" /></a>
                             </div>
                             <div className="youtube">
-                                <a href="#" className='social_a'><UilYoutube className="social_media_icon" /></a>
+                                <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="#" className='social_a'><UilYoutube className="social_media_icon" /></a>
                             </div>
                         </div>
                     </div>
@@ -61,22 +61,22 @@ const Footer = () => {
 
                     <div className="flex_div">
                         <div className="links">
-                            <a href="/">Home</a>
-                            <a href="/about">About</a>
-                            <a href="/courses">Courses</a>
-                            <a href="/blogs">Blogs</a>
-                            <a href="/contact">Contact Us</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/">Home</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/about">About</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/courses">Courses</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/blogs">Blogs</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/contact">Contact Us</a>
                         </div>
                         <div className="links" style={{ marginInlineStart: "3rem" }}>
-                            <a href="/terms&condition">Terms & Conditions</a>
-                            <a href="/return-policy">Return Policy</a>
-                            <a href="/shipping-policy">Shipping Policy</a>
-                            <a href="/privacy-policy">Privacy Policy</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/terms&condition">Terms & Conditions</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/return-policy">Return Policy</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/shipping-policy">Shipping Policy</a>
+                            <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none" }} href="/privacy-policy">Privacy Policy</a>
                         </div>
                     </div>
                 </div>
                 <div className="copyright_bar">
-                    <p className="copyright_text">Copyright @ 2022, All Right Reserved <a href='#'>TRADELAL</a></p>
+                    <p className="copyright_text">Copyright @ 2022, All Right Reserved <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none", color: "orange"}} href='#'>TRADELAL</a></p>
                 </div>
             </div>
         </>
