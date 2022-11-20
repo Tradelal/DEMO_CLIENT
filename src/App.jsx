@@ -1,6 +1,5 @@
 import React, { useState } from 'react'
 import { BrowserRouter, Routes, Link, Route } from 'react-router-dom'
-import "./Add.css"
 import AddAdmin from './pages/AddAdmin/AddAdmin'
 import AddProduct from './pages/AddProduct/AddProduct'
 import AddBlog from './pages/AddBlog/AddBlog'
