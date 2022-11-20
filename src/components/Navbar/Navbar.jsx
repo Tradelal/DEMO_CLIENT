@@ -7,9 +7,10 @@ const Navbar = () => {
   const [userClicked, setUserClicked] = useState(false);
   const [accessBtn, setAccessBtn] = useState(true);
   const navigate = useNavigate();
+  let adminToken;
 
   useEffect(() => {
-    const adminToken = localStorage.getItem("adminToken");
+    adminToken = localStorage.getItem("adminToken");
     if (adminToken) {
       setAccessBtn(false);
     }
@@ -36,7 +37,7 @@ const Navbar = () => {
     <>
       <nav>
         <h1 onClick={() => { navigate("/admin", { replace: true }) }}>Dashboard</h1>
-        {accessBtn ? <div className="nav-links">
+        {adminToken ? <div className="nav-links">
           <a href="/admin/addProduct" className="link">
             Add Product
           </a>
