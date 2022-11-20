@@ -99,7 +99,7 @@ const LogAdmin = () => {
                         <input type="password" name="password" id="password" placeholder="Enter Your Password" onChange={handleChange} autoComplete="off" />
                     </div>
                     <div className="alreadyuser">
-                        <a href="/addadmin" className="userLink">Create Account</a>
+                        <a style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none"}} href="/admin/addadmin" className="userLink">Create Account</a>
                     </div>
 
                     <button type="submit" className="login-btn">Login</button>
