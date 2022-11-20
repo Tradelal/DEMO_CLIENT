@@ -20,23 +20,23 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("adminToken");
-    setAccessBtn((previous)=>{
+    setAccessBtn((previous) => {
       return !previous
     });
   };
 
-  const handleLogin = () => { 
-    navigate("/admin/logadmin", {replace: true})
+  const handleLogin = () => {
+    navigate("/admin/logadmin", { replace: true })
   }
-  const handleRegister = () => { 
-    navigate("/admin/addadmin", {replace: true})
+  const handleRegister = () => {
+    navigate("/admin/addadmin", { replace: true })
   }
 
   return (
     <>
       <nav>
-        <h1 onClick={() => {navigate("/admin", {replace:true})}}>Dashboard</h1>
-        <div className="nav-links">
+        <h1 onClick={() => { navigate("/admin", { replace: true }) }}>Dashboard</h1>
+        {!accessBtn ? <div className="nav-links">
           <a href="/admin/addProduct" className="link">
             Add Product
           </a>
@@ -52,7 +52,7 @@ const Navbar = () => {
           <a href="/admin/userdetail" className="link">
             User Details
           </a>
-        </div>
+        </div> : <></>}
         <div className="user-options">
 
           {accessBtn ? <div>
@@ -63,7 +63,7 @@ const Navbar = () => {
               Register
             </button>
           </div>
-            : 
+            :
             <div>
               <button className="logout-btn" onClick={handleLogout}>
                 Logout
