@@ -77,7 +77,7 @@ const AddAdmin = () => {
         />
 
         <div className="alreadyuser">
-          <a href="/logadmin" className="userLink">Already a User</a>
+          <a href="/admin/logadmin" style={{backgroundColor: "transparent", padding: "0px", border: "none", textDecoration: "none"}} className="userLink">Already a User</a>
         </div>
         <button type="submit" className="submit-btn">Add Admin</button>
         <ToastContainer />
