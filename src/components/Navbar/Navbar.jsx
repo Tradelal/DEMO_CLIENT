@@ -10,8 +10,8 @@ const Navbar = () => {
   let adminToken;
 
   useEffect(() => {
-    adminToken = localStorage.getItem("adminToken");
-    if (adminToken) {
+    adminToken = localStorage.getItem("userName");
+    if (adminToken == "Admin") {
       setAccessBtn(false);
     }
   })
@@ -21,6 +21,8 @@ const Navbar = () => {
 
   const handleLogout = () => {
     localStorage.removeItem("adminToken");
+    localStorage.removeItem("userName");
+    navigate("/admin/logadmin", { replace: true })
     setAccessBtn((previous) => {
       return !previous
     });
@@ -37,7 +39,7 @@ const Navbar = () => {
     <>
       <nav>
         <h1 onClick={() => { navigate("/admin", { replace: true }) }}>Dashboard</h1>
-        {adminToken ? <div className="nav-links">
+        {!accessBtn ? <div className="nav-links">
           <a href="/admin/addProduct" className="link">
             Add Product
           </a>
@@ -53,19 +55,20 @@ const Navbar = () => {
           <a href="/admin/userdetail" className="link">
             User Details
           </a>
-        </div> : <></>}
+        </div>
+          : <></>}
         <div className="user-options">
 
           {accessBtn ? <div>
             <button className="logout-btn" onClick={handleLogin}>
               Login
             </button>
-            <button className="logout-btn" onClick={handleRegister}>
-              Register
-            </button>
           </div>
             :
             <div>
+              <button className="logout-btn" onClick={handleRegister}>
+                Register
+              </button>
               <button className="logout-btn" onClick={handleLogout}>
                 Logout
               </button>
