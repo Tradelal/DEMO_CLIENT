@@ -30,7 +30,7 @@ const Footer = () => {
                         <UilEnvelopeDownload className="footer_icon" />
                         <div className="inner_div">
                             <p className="bold">Mail Us</p>
-                            <p className="number">tradelal.com@gmail.com</p>
+                            <p className="number">contact@tradelal.com</p>
                         </div>
                     </div>
                 </div>
